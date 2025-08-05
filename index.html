@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KEREAN JENIFFER - Resume</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .download-btn {
+        background: #333;
+        color: white;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .download-btn:hover { background: #555; }
+
+    .resume {
+        display: flex;
+        max-width: 900px;
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Left Column */
+    .left {
+        background: #333;
+        color: white;
+        width: 30%;
+        padding: 20px;
+    }
+
+    .left img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 15px;
+        object-fit: cover;
+    }
+
+    .left h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 20px 0 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+        padding-bottom: 5px;
+    }
+
+    .left p, .left a, .left li {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .left a {
+        color: #ccc;
+        text-decoration: none;
+    }
+
+    .left ul {
+        list-style: none;
+        padding-left: 10px;
+    }
+
+    /* Right Column */
+    .right {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .name {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .title {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    .contact {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .contact p {
+        margin-bottom: 5px;
+    }
+
+    .right-section {
+        margin-bottom: 20px;
+    }
+
+    .right-section h3 {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .job {
+        margin-bottom: 15px;
+    }
+
+    .job-title {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .job-date {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+
+    .job ul {
+        padding-left: 18px;
+        font-size: 13px;
+    }
+
+    .languages {
+        display: flex;
+        gap: 15px;
+        font-size: 13px;
+    }
+
+    .bar {
+        background: #ddd;
+        height: 6px;
+        width: 100%;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-top: 4px;
+    }
+
+    .bar-fill {
+        background: #333;
+        height: 100%;
+    }
+</style>
+</head>
+<body>
+<!-- Download Button -->
+<button class="download-btn" onclick="downloadResume()">⬇ Download Resume</button>
+
+<div class="resume" id="resume">
+    <!-- LEFT COLUMN -->
+    <div class="left">
+        <img src="kereanPP.jpg">
+        <h2>About Me</h2>
+        <p>Motivated and Eager to build a strong foundataion in programming and software development.Passionate about software development, problem-solving, and continuous learning.</p>
+
+        <div class="section-title">Links</div>
+        <p><a href="#">LinkedIn: linkedin.com/in/kerean</a></p>
+
+        <div class="section-title">Hobbies</div>
+        <ul>
+            <li>Programming</li>
+            <li>Gaming</li>
+            <li>Travel</li>
+            <li>Music</li>
+        </ul>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="right">
+        <div class="name">Kerean jeniffer W</div>
+                <div class="contact">
+            <p>Chennai,India </p>
+            <p>+91 78240 37481</p>
+            <p>keren2006@email.com</p>
+        </div>
+
+        <div class="right-section">
+            <h3>SKILLS</h3>
+            <div class="job">                 
+                <ul>
+                    <li>Erudite in HTML, CSS, and JavaScript</li>
+                    <li>Enlightened basics in python </li>
+                    <li>Experienced Tested and debugged applications </li>
+                </ul>
+            </div>
+        <div class="right-section">
+            <h3>EDUCATION</h3>
+            <div class="job">
+                <div class="job-title">currently Bachelor's Degree </div>
+                <div class="job-date">SRM Arts and Science, 2024 - 2027</div>
+                   <ul>
+                    <li>Member of the Active Coding in Class</li>
+                </ul>
+            </div>
+            <div class="job">
+                <div class="job-title">High School</div>
+                <div class="job-date">GKM vidyashram School, 2024 </div>
+                <ul>
+                    <li>Focused on Computer Science and technology</li>
+                    <li>Intersted in Extra circular activities </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <h3>Languages</h3>
+            <div class="languages">
+                <div>
+                    English
+                    <div class="bar"><div class="bar-fill" style="width:100%"></div></div>
+                </div>
+                <div>
+                    Tamil
+                    <div class="bar"><div class="bar-fill" style="width:60%"></div></div>
+                </div>
+                <div>
+                    Malayalam
+                    <div class="bar"><div class="bar-fill" style="width:30%"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function downloadResume() {
+    window.print(); // Opens print dialog → Choose "Save as PDF"
+
+}
+</script>
+</body>
+</html>
